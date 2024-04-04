@@ -1,0 +1,16 @@
+apiVersion: tekton.dev/v1beta1
+kind: ClusterTask
+metadata:
+  name: example-cluster-task
+spec:
+  steps:
+    - name: step1
+      image: alpine
+      script: |
+        #!/bin/sh
+        echo "This is step 1"
+    - name: step2
+      image: alpine
+      script: |
+        #!/bin/sh
+        echo "This is step 2"

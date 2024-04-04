@@ -1,0 +1,9 @@
+apiVersion: tekton.dev/v1beta1
+kind: CustomRun
+metadata:
+  name: my-example-run
+spec:
+  customRef:
+    apiVersion: example.dev/v1beta1
+    kind: Example
+    name: an-existing-example-task
